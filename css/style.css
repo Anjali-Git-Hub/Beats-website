@@ -88,7 +88,7 @@ body{
     width: 20%;
     height: 80%;
     position: relative;
-    top: -104px;
+    top: -127px;
     left: 158px;
 }
 .main-sec::after{
@@ -221,15 +221,16 @@ p{
  .buy-des{
     display: flex;
     flex-direction: column;
+   
     gap: 15px;
 }
 .buy-button{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 40%;
-    padding: 0.5em 0;
-    border-radius:5px ;
+    width: 50%;
+    padding: 0.8em 0;
+    border-radius: 10px;
     background-color: #0f0f10;
 }
 
@@ -250,7 +251,7 @@ p{
 }
 .product-section .products-pic{
     position: relative;
-    bottom: 65px;
+    bottom: 45px;
     left: 50px;
     width: 50%;
    
@@ -408,7 +409,7 @@ footer{
     padding-left:50px ;
     transition: all 0.5s ease-in-out;
     box-shadow: 5px 0px 10px 0px #aaa;
-    margin-top: -20px;
+    margin-top: -25px;
 }
 .nav-bar img{
     position: absolute;
@@ -448,20 +449,21 @@ footer{
 
 .nav-bar input[type="checkbox"]:checked~.nav-items{
     transform: translateX(0);
-    
-
 }
 }
-
 @media (max-width:768px) {
     .main-pic{
         display: none;
     }
     .about-beats{
+        float: none;
         width: 90%;
         margin: auto;
         text-align: center;
         
+    }
+    .about-beats>*{
+        padding: 0.5em;
     }
     .button{
         width: 90%;
@@ -489,14 +491,26 @@ footer{
     flex-wrap: wrap;
     gap: 3rem;
     justify-content: space-around;
-    
     }
+    .buy-now .buy-des{
+        width: 75%;
+        margin: auto;
+        align-items: center;
+}
     .case-content{
     flex-wrap: wrap;
+    text-align: center;
     
     }
     .wrapper-img img{
     width: 70%;
+    padding-left: 4px;
+    }
+    .case-des{
+        align-items: center;
+    }
+    .case-button{
+        margin: 2em auto;
     }
     .specs-content{
     justify-content: space-between;
